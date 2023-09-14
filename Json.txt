@@ -1,0 +1,3 @@
+Estensiones
+
+Json crack [extension y VS][Crakear para apis], json viewer, web vitals, visbug

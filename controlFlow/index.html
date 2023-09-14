@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow</title>
+    <script src="/controlFlow/script.js"></script>
+</head>
+<body>
+    <h1> Tabla de multiplicar</h1>
+    <label for="numero">Ingresa numero: </label> <!--for nos indica que indicador le voy a poner-->
+    <input type="text" id="numero">
+    <button onclick="generarTabla()">Generar Tabla</button> <!--cuando sienta el click llama la funcion generarTabla-->
+    <table id="tabla">
+        <!--thead etiqueta permite crear cabecera-->
+        <thead>
+            <!--Creo filas con tr-->
+            <tr>
+                <!--Esta etiqueta nos permite crear las columnas-->
+                <th>Numero</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody></tbody><!--tbody lo voy a modificar js, tbody es la etiqueta simboliza el cuerpo de mi tabla-->
+    </table>
+</body>
+</html>

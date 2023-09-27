@@ -59,3 +59,33 @@ console.log(`Declaration function ${add(4,6)}`);
 function add(x1,x2){
        return x1+x2;
 }
+
+console.log("--------------------------------------------Practicing a bit------------------------------------------")
+//Voy a hacer arroz para mi familia
+function integrantes(n){
+    function ingredientes(cantidad, unidadMedida, ingrediente){
+        //Creo una variable para que me multiplique la cantidad con respecto al numero de integrantes
+        let cantidadTotal = cantidad*n;
+        console.log(`${cantidadTotal} ${unidadMedida} de ${ingrediente}`)
+    }
+      
+    ingredientes(3, "tazas", "agua");
+    ingredientes(1.5, "tazas", "arroz");
+    ingredientes(2, "piscas", "sal");
+    ingredientes(2, "tapitas", "aceite");
+
+}
+
+integrantes(5);
+
+console.log("--------------------------------------------Practicing a bit------------------------------------------")
+function factorial(n){
+          function add(x1,x2){
+          let resultado = (x1+x2)*(n*n)
+            return console.log(resultado)
+          };
+    
+     add(4,3)
+}
+
+factorial(3);

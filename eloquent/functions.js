@@ -217,3 +217,9 @@ function multiplier(factor){
 }
 
 
+//Using Math.min, create a function min that takes two arguments and returns their minimum
+console.log(`---------------------------Exercises-----------------------------`)
+function min(num1,num2){
+   return console.log(`${Math.min(num1,num2)}`);
+}
+min(4,2)

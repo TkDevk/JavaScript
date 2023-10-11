@@ -1,0 +1,44 @@
+body{
+    background-color: #416cb6;
+}
+.form-container{
+    text-align: center;
+    margin: 10vh auto;
+    width: 10vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.2rem;
+    border-radius: 1rem;
+    box-shadow:0.5rem 0.3rem 0.5rem black;
+    padding:1rem;
+    background-color: azure;
+}
+.form-title{
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.addInfoForm{
+   width: 20vw;
+   height: auto;
+   color: #fff;
+}
+.form-input{
+    margin: 1vh 0;
+    border-radius: 0.2rem;
+    background-color: rgb(220, 220, 220);
+    
+}
+
+.mf-btn{
+    width: 5vw;
+    height: 10vh;
+    background-color: #274d8f;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.3rem 0.5rem #21427a;
+    margin:auto;
+}

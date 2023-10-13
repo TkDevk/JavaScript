@@ -1,0 +1,178 @@
+body{
+    background-color: #416cb6;
+}
+.form-container{
+    text-align: center;
+    margin: 10vh auto;
+    width: 10vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.2rem;
+    border-radius: 1rem;
+    box-shadow:0.5rem 0.3rem 0.5rem black;
+    padding:1rem;
+    background-color: azure;
+}
+.form-title{
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.addInfoForm{
+   width: 20vw;
+   height: auto;
+   color: #fff;
+}
+.form-input{
+    margin: 1vh 0;
+    border-radius: 0.2rem;
+    background-color: rgb(220, 220, 220);
+    
+}
+
+.mf-btn{
+    width: 5vw;
+    height: 10vh;
+    background-color: #274d8f;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.3rem 0.5rem #21427a;
+    margin:auto;
+}
+
+
+
+/*Cards design */
+/**PRofile picture, saved icon*/
+
+.card--container{
+    margin: 3rem 0;
+    height: 19rem;
+    border: 0.2rem solid var(--black-color);
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    width: 14rem;
+    border-radius: 1rem;
+
+}
+
+.card--container::-webkit-scrollbar {
+    display: none;
+  }
+.card-figures{
+    display: inline-block;
+    padding: 1rem;
+}
+.card-profile-picture{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.saved--icon{
+    padding-right:1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: var(--highlight-color);
+    color:var(--dark);
+    cursor: pointer;
+    margin-left: 1rem;
+    position:absolute;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+/*Names, details */
+.card--price{
+    font-weight: bold;
+
+}
+
+.card--description{
+    padding-left: 1rem;
+
+}
+.card--user-name{
+    margin-top: 0;
+
+}
+.card--skill{
+    color:var(--highlight-color)
+
+}
+.card--rate--button--container{
+      display:flex;
+      justify-content:space-around;
+      gap:3rem;
+      
+
+}
+.card--rate--button{
+    background-color: var(--highlight-color);
+    color:var(--white-color);
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    
+    
+}
+#avatar-perfil--button{
+    border: none;
+    color:var(--highlight-color);
+    background-color:var(----light) ;
+
+}
+
+/*Bring some colors*/
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+
+
+    /***/
+    --primary-color: #007bff;
+    --secondary-color: #003671;
+    --text-icons-color: #333333;
+    --secondary-text-color: #666666;
+    --white-color: #ffffff;
+    --highlight-color: #ff5722;
+    --light-highlight: #ff9c7efe;
+    --primary-color-opacity: rgba(#007bff 0.2);
+    --secondary-color-opacity: rgba(#007bff 0.2);
+    --black-color: #000000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+}
+#addImg{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #416cb6;
+    
+}

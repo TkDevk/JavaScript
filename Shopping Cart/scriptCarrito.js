@@ -20,22 +20,24 @@ function addInfoForm(){
 
 */
 let usersArray=[]
-const profileImg = document.getElementById('addImg');
+let idUpdate=0;
+const profileImg = document.getElementById('addImg'), input = document.getElementById('addImgInput');
+input.addEventListener("change", function() {
+  profileImg.src = URL.createObjectURL(input.files[0]);
+});
 function addInfoForm(){
 const addInfoService = document.getElementById('addInfoService').value;
 const addDescription  = document.getElementById('addInfoDescription').value;
 const addInfoPrice = document.getElementById('addInfoPrice').value;
 const addInfoPortFolio = document.getElementById('addInfoPortFolio').value;
 const list = document.getElementById('list');
-const profileImg = document.getElementById('addImg'), input = document.getElementById('addImgInput');
 
-input.addEventListener("change", function() {
-  profileImg.src = URL.createObjectURL(input.files[0]);
-});
+
+
 //Instanciando re duro el array
 let usersArray= [ // Uso los brackets por que para el for each tiene que ser solo con arrays
      {
-     
+     id:idUpdate++, //Si no lo incio en 0 no incrementa xD
      serviceName: addInfoService,
      descriptionName: addDescription,
      priceInfo: addInfoPrice,
@@ -92,7 +94,7 @@ let listUsers =[];
      <h3 class="card--user-name">${user.serviceName}</h3>
      <span class="card--skill"> ${user.descriptionName}</span>
      <p class="card--price">Price ${user.priceInfo}</p>
-     <p class="card--price">Price ${user.portfolioInfo}</p>
+     <p class="card--price">Check my portfolio ${user.portfolioInfo}</p>
      <img id="#addImg" src="${user.img}">
      <picture class="card--rate--button--container">
        <button id="avatar-perfil--button" type="">
@@ -111,7 +113,7 @@ jsonButton.addEventListener('click', function() {
   if (listUsers[key] == null) {// Si no existe crea una copia en
     listUsers[key] = JSON.parse(JSON.stringify(usersArray[key]));//usersArray
     listUsers[key].quantity = +1;
-    console.log(listUsers.length);
+    console.log(`Json ? ${listUsers.length}`);
   }
 
 });

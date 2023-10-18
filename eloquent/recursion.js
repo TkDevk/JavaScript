@@ -47,3 +47,26 @@ function printAnimalsFarm(pigs, cows, chicken){
 }
     
 printAnimalsFarm(30,21,87);
+console.log(`----------------Functions excercises---------------------`)
+/**
+ * Zero is even
+ * One is odd
+ * For any other numer its evenness is the same as N-2
+ * return a boolean value
+ * */ 
+
+function isEven(number){
+   if(number%2==0){
+    return true;
+   }else if (number%2==1) {
+     return false
+   } else{
+    return isEven(number-2);
+   }
+}
+
+console.log(isEven(-1))
+
+/**
+ * Bean Counting
+*/
